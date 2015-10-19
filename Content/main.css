@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: darkred; 
+    color: white;
+}
+
+body {
+    font-family: monospace; /* the two rules, even if they are the same specificity, will always be ruled with the later rule
+     in this case it would be the SECOND body*/
+    font-size: 20px;
+    line-height: 25px;
+    background-image: url("../Assets/images/persona_5_wallpaper_by_de_monvarela-d8grscx.jpg");
+    background-repeat: no-repeat;  /* picture doesn't repeat forever */
+   
+}
+
+/* header class styles */
+
+h1,h2,h3,h4,h5,h6
+{
+    color: white;
+    background-color: black;
+    border-color: white;
+    border: 2px solid white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align:center;
+}
+
+h1 {                              
+    font-family: fantasy;
+    font-size: 2.5em;   /*em is your size of font. since we specified 20 pixels for the body size above, then by writing "2em
+    we are saying that it is 2.5 times as much. So 2.5em's = 2 x 20px = 40px */
+    
+    
+    /* note that em's are 16px by default if you don't initialize it like we did in this example */
+    
+    
+    line-height: 50px; /* overriding the body font-size by being more specific for something in the body */
+    color: red;
+    
+}
+
+/* paragraph */
+p {
+    color: black;
+    background-color: white;
+    border-color: black;
+    border: 3px solid black;
+}
+    
+.image {
+    height: auto;
+    width: auto;
+}
+
+.large {
+    height: 45%;
+    width: 45%;
+}
+
+#title
+{
+    font-size: 3.5em;
+    line-height: 75px;
+    font-stretch: semi-expanded;
+    font-variant: small-caps;
+}
+#movie
+{
+    float: right;
+}
+#wanted
+{
+    float:right;
+}
